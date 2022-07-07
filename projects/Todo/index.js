@@ -3,9 +3,17 @@ document.querySelector("form").addEventListener("submit",createTodo);
 
 function createTodo() {
     event.preventDefault();
-    var task=document.querySelector("#task").value;
-    var priority=document.querySelector("#priority").value;
-    console.log(task,priority);  // used for just console
+    // var task=document.querySelector("#task").value;
+    var task1=document.querySelector("#task");
+    var task=task1.value;
+    task1.value="";   // this is used for after submit erase the input box
+
+    // var priority=document.querySelector("#priority").value;
+    var priority1=document.querySelector("#priority");
+    var priority=priority1.value;
+    priority1.value="";   // this is used for after submit erase the input box
+
+    console.log(task,task1,priority,priority1);  // used for just console
 
     // now create table
 
