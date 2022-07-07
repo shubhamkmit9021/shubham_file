@@ -1,0 +1,137 @@
+h1 {
+  text-align: center;
+  color: #2b619e;
+  font-size: 35px;
+  font-family: monospace;
+  text-decoration: underline;
+  text-transform: uppercase;
+}
+
+div {
+  display: flex;
+  justify-content: space-around;
+}
+
+form {
+  margin: 0 auto;
+  margin-top: 20px;
+  width: 25%;
+  padding: 30px;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+
+label {
+  font-size: 20px;
+}
+
+table {
+  margin: auto;
+  margin-top: 20px;
+  width: 65%;
+  border-collapse: collapse;
+  text-align: center;
+}
+
+table td,
+table th {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: center;
+}
+
+table tr:nth-child(even)
+{
+  background-color: #8caacf;
+}
+
+table tr:hover {
+  background-color: #ddd;
+}
+
+table th {
+  padding: 12px auto;
+  text-align: center;
+  background-color: #0468aa;
+  color: white;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+input[type="text"],select,textarea {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  margin-top: 6px;
+  margin-bottom: 8px;
+  box-sizing: border-box;
+  resize: vertical;
+}
+
+input[type="number"] {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  margin-top: 6px;
+  margin-bottom: 8px;
+  box-sizing: border-box;
+  resize: vertical;
+}
+
+
+
+input[type="submit"] {
+  background-color: #2b619e;
+  color: white;
+  text-align: center;
+  width: 100%;
+  margin-top: 10px;
+  border: none;
+  border-radius: 20px;
+  padding: 12px 20px;
+  font-size: 20px;
+  cursor: pointer;
+
+}
+
+input[type="submit"]:hover {
+  background-color: #3973b6;
+}
+
+
+/* Media queries for average screen */
+
+@media screen and (min-width: 400px) and (max-width: 1020px) {
+    div {
+      display: grid;
+      grid-template-columns: 80%;
+    }  
+
+    form {
+      width: 50%;
+    }
+    table {
+      width: 90%;
+    }
+}
+
+/* Media queries for small screen */
+
+@media screen and (min-width: 0px) and (max-width: 399px) {
+  div {
+    display: grid;
+    grid-template-columns: 90%;
+  }  
+
+  form {
+    width: 80%;
+  }
+  table {
+    width: 90%;
+  }
+}
+
+
