@@ -34,6 +34,8 @@ table {
   width: 65%;
   border-collapse: collapse;
   text-align: center;
+  box-sizing: border-box;
+  resize: vertical;
 }
 
 table td,
@@ -108,7 +110,7 @@ input[type="submit"]:hover {
 
 /* Media queries for average screen */
 
-@media screen and (min-width: 400px) and (max-width: 1020px) {
+@media screen and (min-width: 700px) and (max-width: 1020px) {
     div {
       display: grid;
       grid-template-columns: 80%;
@@ -122,9 +124,32 @@ input[type="submit"]:hover {
     }
 }
 
+
+/* Media queries for average screen */
+
+@media screen and (min-width: 400px) and (max-width: 699px) {
+  h1 {
+    font-size: 20px;
+  }
+  div {
+    display: grid;
+    grid-template-columns: 98%;
+  }  
+
+  form {
+    width: 75%;
+  }
+  table {
+    width: 95%;
+  }
+}
+
 /* Media queries for small screen */
 
 @media screen and (min-width: 0px) and (max-width: 399px) {
+  h1 {
+    font-size: 15px;
+  }
   div {
     display: grid;
     grid-template-columns: 90%;
@@ -135,6 +160,7 @@ input[type="submit"]:hover {
   }
   table {
     width: 90%;
+    
   }
 }
 
