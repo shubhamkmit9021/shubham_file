@@ -13,21 +13,21 @@
 }
 
 input[type="text"],select,textarea {
-    width: 90%;
+    width: 80%;
     padding: 8px 0px;
     margin: 8px 0px;
 
 }
 
 input[type="number"] {
-    width: 90%;
+    width: 80%;
     padding: 8px 0px;
     margin: 8px 0px;
 
 }
 
 input[type="submit"] {
-    width: 90%;
+    width: 80%;
     border-radius: 4px;
     font-size: 24px;
     font-weight: 600;
@@ -59,4 +59,37 @@ table th {
 table th, table td {
     padding: 8px 0px;
     border: 1px solid teal;
+}
+
+/* media queries */  
+
+/* for medium secreen */
+
+@media screen and (min-width:480px ) and (max-width:860px ) {
+    #create {
+        width: 60%;
+    }
+
+    #table {
+        width: 80%;
+        margin: auto;
+        margin: auto 10px;
+       
+    }
+    
+}
+
+/* for small secreen */
+
+@media screen and (min-width:0px ) and (max-width:479px ) {
+    #create {
+        width: 90%;
+    }
+
+    #table {
+        width: 90%;
+        margin: auto;
+        margin: auto 10px;
+    }
+    
 }
