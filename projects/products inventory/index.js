@@ -3,12 +3,33 @@ var sum=0;
 
 function fillData() {
     event.preventDefault();
-    var name=document.querySelector("#name").value;
-    var category=document.querySelector("#category").value;
-    var brand=document.querySelector("#brand").value;
-    var price=document.querySelector("#price").value;
-    var delivered=document.querySelector("#deliveredBy").value;
+    // var name=document.querySelector("#name").value;
+    var name1=document.querySelector("#name");
+    var name=name1.value;
+    name1.value="";
+
+    // var category=document.querySelector("#category").value;
+    var category1=document.querySelector("#category");
+    var category=category1.value;
+    category1.value="";
+
+    // var brand=document.querySelector("#brand").value;
+    var brand1=document.querySelector("#brand");
+    var brand=brand1.value;
+    brand1.value="";
+
+    // var price=document.querySelector("#price").value;
+    var price1=document.querySelector("#price");
+    var price=price1.value;
+    price1.value="";
+
+    // var delivered=document.querySelector("#deliveredBy").value;
+    var delivered1=document.querySelector("#deliveredBy");
+    var delivered=delivered1.value;
+    delivered1.value="";
+
     console.log(name,category,brand,price,delivered);
+
 
     // FOR PRICE PRINT  
     sum=sum+ +price;   // + icon is used for convert in number from string
