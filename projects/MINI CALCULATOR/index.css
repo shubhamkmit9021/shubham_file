@@ -8,9 +8,12 @@ div {
     background-color: teal;
     height: fit-content;
     width: fit-content;
-    margin: 10% 5% ;
     padding: 2% 2%;
-    /* justify-content: center; */
+    border: 2px solid red;
+    display: block;
+    margin: auto;
+    align-items: center;
+    margin-top: 20vh;
 }
 
 div > input {
