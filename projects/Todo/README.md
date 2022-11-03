@@ -1,6 +1,6 @@
 # TODO App
 
-## [Deployed link](https://evaluation-report-card.netlify.app/)
+## [Deployed link](https://todos-add-only.netlify.app/)
 
 - This is a straightforward and user-friendly Application.
 
